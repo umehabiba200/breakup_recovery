@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Comeback Room</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <header class="top-bar">
+
+        <a
+            href="home.html"
+            class="back-button"
+        >
+            ← HQ
+        </a>
+
+
+        <div class="logo">
+            COMEBACK ROOM
+        </div>
+
+    </header>
+
+
+
+    <main class="page-container">
+
+
+        <section class="page-heading">
+
+            <span class="section-number">
+                DEPARTMENT 05
+            </span>
+
+
+            <h1>
+                Tiny Wins Count.
+            </h1>
+
+
+            <p>
+                You don't have to rebuild your entire life today.
+                One small thing still counts.
+            </p>
+
+        </section>
+
+
+
+        <!-- TOTAL -->
+
+        <section class="stats-card">
+
+            <h2>
+                YOUR COMEBACK ENERGY
+            </h2>
+
+
+            <div class="total-score">
+
+                <span>
+                    TODAY
+                </span>
+
+
+                <strong id="comebackTotal">
+                    0
+                </strong>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FOOD REPORT -->
+
+        <section class="question-card">
+
+            <h2>
+                🍛 Food Department
+            </h2>
+
+
+            <p
+                id="foodSummary"
+                class="result-message"
+            >
+                Your food report will appear here.
+            </p>
+
+        </section>
+
+
+
+        <!-- SMALL WINS -->
+
+        <section class="question-card">
+
+            <h2>
+                Claim Today's Tiny Wins
+            </h2>
+
+
+            <div class="choice-grid">
+
+
+                <button
+                    class="choice-button comeback-button"
+                    data-points="30"
+                    data-name="Ate properly"
+                >
+                    🍛 Ate properly
+                    <small>
+                        +30 points
+                    </small>
+                </button>
+
+
+                <button
+                    class="choice-button comeback-button"
+                    data-points="20"
+                    data-name="Drank water"
+                >
+                    💧 Drank enough water
+                    <small>
+                        +20 points
+                    </small>
+                </button>
+
+
+                <button
+                    class="choice-button comeback-button"
+                    data-points="20"
+                    data-name="Slept properly"
+                >
+                    😴 Slept properly
+                    <small>
+                        +20 points
+                    </small>
+                </button>
+
+
+                <button
+                    class="choice-button comeback-button"
+                    data-points="15"
+                    data-name="Went outside"
+                >
+                    🌤️ Went outside
+                    <small>
+                        +15 points
+                    </small>
+                </button>
+
+
+                <button
+                    class="choice-button comeback-button"
+                    data-points="15"
+                    data-name="Did my work"
+                >
+                    💼 Did my work
+                    <small>
+                        +15 points
+                    </small>
+                </button>
+
+
+                <button
+                    class="choice-button comeback-button"
+                    data-points="10"
+                    data-name="Actually laughed"
+                >
+                    😂 Actually laughed
+                    <small>
+                        +10 points
+                    </small>
+                </button>
+
+
+            </div>
+
+
+            <p
+                id="winMessage"
+                class="result-message"
+            ></p>
+
+        </section>
+
+
+
+        <section class="comeback-message">
+
+            <h2>
+                Remember this.
+            </h2>
+
+
+            <p>
+
+                The goal isn't to suddenly become completely okay.
+                The goal is to keep showing up for yourself,
+                even on days when you don't feel like it.
+
+            </p>
+
+        </section>
+
+
+
+        <button
+            class="main-button"
+            onclick="goHome()"
+        >
+            BACK TO HOME →
+        </button>
+
+
+    </main>
+
+
+    <script src="js/game.js"></script>
+
+
+</body>
+
+</html>

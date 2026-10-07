@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Brain.exe</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <header class="top-bar">
+
+        <a
+            href="home.html"
+            class="back-button"
+        >
+            ← HQ
+        </a>
+
+
+        <div class="logo">
+            BRAIN.EXE
+        </div>
+
+    </header>
+
+
+
+    <main class="page-container">
+
+
+        <section class="page-heading">
+
+            <span class="section-number">
+                DEPARTMENT 02
+            </span>
+
+
+            <h1>
+                Brain.exe
+            </h1>
+
+
+            <p>
+                Your brain has once again chosen violence.
+            </p>
+
+        </section>
+
+
+
+        <!-- QUESTION 1 -->
+
+        <section class="scenario-card">
+
+
+            <div class="scenario-number">
+                INCIDENT 01
+            </div>
+
+
+            <h2>
+                It's 1:47 AM.
+                You suddenly remember them.
+            </h2>
+
+
+            <p>
+                What are you doing?
+            </p>
+
+
+            <div class="scenario-options">
+
+
+                <button
+                    class="brain-option"
+                    onclick="brainChoice('profile')"
+                >
+                    👀 Open their profile
+                </button>
+
+
+                <button
+                    class="brain-option"
+                    onclick="brainChoice('ceiling')"
+                >
+                    🧍 Stare at the ceiling dramatically
+                </button>
+
+
+                <button
+                    class="brain-option"
+                    onclick="brainChoice('water')"
+                >
+                    💧 Drink water and go to sleep
+                </button>
+
+
+                <button
+                    class="brain-option"
+                    onclick="brainChoice('text')"
+                >
+                    💀 Send "hey" and ruin everyone's evening
+                </button>
+
+
+            </div>
+
+
+            <p
+                id="brainResult1"
+                class="result-message"
+            ></p>
+
+
+        </section>
+
+
+
+        <!-- QUESTION 2 -->
+
+        <section class="scenario-card">
+
+
+            <div class="scenario-number">
+                INCIDENT 02
+            </div>
+
+
+            <h2>
+                You accidentally find an old photo.
+            </h2>
+
+
+            <p>
+                What happens next?
+            </p>
+
+
+            <div class="scenario-options">
+
+
+                <button
+                    class="brain-option"
+                    onclick="brainChoice2('investigate')"
+                >
+                    🔎 Investigate every pixel
+                </button>
+
+
+                <button
+                    class="brain-option"
+                    onclick="brainChoice2('cry')"
+                >
+                    🎬 Cry for cinematic effect
+                </button>
+
+
+                <button
+                    class="brain-option"
+                    onclick="brainChoice2('close')"
+                >
+                    🚪 Close it and continue my day
+                </button>
+
+
+                <button
+                    class="brain-option"
+                    onclick="brainChoice2('friend')"
+                >
+                    📱 Send it to my friend at 3 AM
+                </button>
+
+
+            </div>
+
+
+            <p
+                id="brainResult2"
+                class="result-message"
+            ></p>
+
+
+        </section>
+
+
+
+        <!-- GO HOME -->
+
+        <button
+            class="main-button"
+            onclick="goHome()"
+        >
+            DONE. TAKE ME HOME →
+        </button>
+
+
+    </main>
+
+
+    <script src="js/game.js"></script>
+
+
+</body>
+
+</html>

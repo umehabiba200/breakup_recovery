@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Distraction Arcade</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <header class="top-bar">
+
+        <a
+            href="home.html"
+            class="back-button"
+        >
+            ← HQ
+        </a>
+
+
+        <div class="logo">
+            DISTRACTION ARCADE
+        </div>
+
+    </header>
+
+
+
+    <main class="page-container">
+
+
+        <section class="page-heading">
+
+            <span class="section-number">
+                OPTIONAL CHAOS
+            </span>
+
+
+            <h1>
+                One Very Important Game 🎮
+            </h1>
+
+
+            <p>
+                Choose wisely.
+                The fate of absolutely nothing depends on this.
+            </p>
+
+        </section>
+
+
+
+        <section class="game-stage active-stage">
+
+
+            <div class="stage-tag">
+                THE GREAT CHAI TRIAL
+            </div>
+
+
+            <h2>
+                Who deserves the last cup of chai?
+            </h2>
+
+
+            <p>
+                Choose one.
+                There is definitely a correct answer.
+                Probably.
+            </p>
+
+
+            <div class="rapid-options">
+
+
+                <button
+                    class="rapid-option"
+                    onclick="chaiChoice('me')"
+                >
+                    🧍 Me
+                </button>
+
+
+                <button
+                    class="rapid-option"
+                    onclick="chaiChoice('friend')"
+                >
+                    🧑‍🤝‍🧑 My Friend
+                </button>
+
+
+                <button
+                    class="rapid-option"
+                    onclick="chaiChoice('cat')"
+                >
+                    🐈 The Cat
+                </button>
+
+
+            </div>
+
+
+            <p
+                id="chaiResult"
+                class="game-message"
+            ></p>
+
+
+            <button
+                id="arcadeHome"
+                class="main-button"
+                onclick="goHome()"
+                style="display:none;"
+            >
+                THAT WAS IMPORTANT. TAKE ME HOME →
+            </button>
+
+
+        </section>
+
+
+    </main>
+
+
+    <script src="js/game.js"></script>
+
+
+</body>
+
+</html>

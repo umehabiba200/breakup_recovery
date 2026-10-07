@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Food Department</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <header class="top-bar">
+
+        <a
+            href="home.html"
+            class="back-button"
+        >
+            ← HQ
+        </a>
+
+
+        <div class="logo">
+            FOOD DEPARTMENT
+        </div>
+
+    </header>
+
+
+
+    <main class="page-container">
+
+
+        <section class="page-heading">
+
+            <span class="section-number">
+                DEPARTMENT 01
+            </span>
+
+
+            <h1>
+                Did you eat today?
+            </h1>
+
+
+            <p>
+                Be honest.
+                We are not judging.
+                Your stomach, however, has filed a complaint.
+            </p>
+
+        </section>
+
+
+
+        <!-- FOOD -->
+
+        <section class="question-card">
+
+            <h2>
+                🍛 How much did you actually eat?
+            </h2>
+
+
+            <div class="choice-grid">
+
+
+                <button
+                    class="choice-button food-choice"
+                    data-points="30"
+                    data-status="full"
+                >
+
+                    🍽️ Proper meal
+
+                    <small>
+                        I ate like a functioning human.
+                    </small>
+
+                </button>
+
+
+
+                <button
+                    class="choice-button food-choice"
+                    data-points="20"
+                    data-status="some"
+                >
+
+                    😐 Ate a little
+
+                    <small>
+                        Could've eaten more.
+                    </small>
+
+                </button>
+
+
+
+                <button
+                    class="choice-button food-choice"
+                    data-points="10"
+                    data-status="barely"
+                >
+
+                    🫠 Barely ate
+
+                    <small>
+                        This is concerning.
+                    </small>
+
+                </button>
+
+
+
+                <button
+                    class="choice-button food-choice"
+                    data-points="5"
+                    data-status="nothing"
+                >
+
+                    💀 Basically nothing
+
+                    <small>
+                        BRO. FOOD.
+                    </small>
+
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- WATER -->
+
+        <section class="question-card">
+
+            <h2>
+                💧 Water situation?
+            </h2>
+
+
+            <div class="choice-grid">
+
+
+                <button
+                    class="choice-button water-choice"
+                    data-points="20"
+                >
+                    💧 Good
+                    <small>
+                        Hydrated human.
+                    </small>
+                </button>
+
+
+                <button
+                    class="choice-button water-choice"
+                    data-points="10"
+                >
+                    🥤 Some
+                    <small>
+                        Could do better.
+                    </small>
+                </button>
+
+
+                <button
+                    class="choice-button water-choice"
+                    data-points="5"
+                >
+                    🏜️ Almost none
+                    <small>
+                        You are not a cactus.
+                    </small>
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- SLEEP -->
+
+        <section class="question-card">
+
+            <h2>
+                😴 Sleep situation?
+            </h2>
+
+
+            <div class="choice-grid">
+
+
+                <button
+                    class="choice-button sleep-choice"
+                    data-points="20"
+                >
+                    😴 Slept properly
+                </button>
+
+
+                <button
+                    class="choice-button sleep-choice"
+                    data-points="10"
+                >
+                    🫠 Barely slept
+                </button>
+
+
+                <button
+                    class="choice-button sleep-choice"
+                    data-points="5"
+                >
+                    💀 What is sleep?
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- OUTSIDE -->
+
+        <section class="question-card">
+
+            <h2>
+                🌤️ Did you leave the house?
+            </h2>
+
+
+            <div class="choice-grid">
+
+
+                <button
+                    class="choice-button outside-choice"
+                    data-points="20"
+                >
+                    🚶 Yes
+                </button>
+
+
+                <button
+                    class="choice-button outside-choice"
+                    data-points="5"
+                >
+                    🛌 No
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- SAVE -->
+
+        <button
+            id="saveFoodReport"
+            class="main-button"
+        >
+            SAVE TODAY'S REPORT →
+        </button>
+
+
+        <p
+            id="foodResult"
+            class="result-message"
+        ></p>
+
+
+    </main>
+
+
+    <script src="js/game.js"></script>
+
+
+</body>
+
+</html>
